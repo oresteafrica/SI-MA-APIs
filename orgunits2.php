@@ -48,7 +48,7 @@ error_reporting(E_ALL | E_STRICT);
 $date = date('Y-m-d');
 if ( check_get('debug') ) { $debug = true; } else { $debug = false; }
 
-$ini_array = parse_ini_file('../../cron/si-ma.ini');
+$ini_array = parse_ini_file('../../cron/si-ma2.ini');
 $url_data = $ini_array['orgunits_main'];
 $post_string_b64 = base64_encode($ini_array['user_64_main']);
 $auth = 'Authorization: Basic '.$post_string_b64;
